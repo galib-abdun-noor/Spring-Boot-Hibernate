@@ -25,4 +25,15 @@ Spring MVC is a robust and flexible web framework in the Spring ecosystem which 
 - Developers can choose options such as project type, language, Spring Boot version, and dependencies.
 - Spring Initializr generates a downloadable project archive or provides a link to clone the project from a version control system like Git.
 
+# POM File
+The POM (Project Object Model) file is an essential configuration file in Maven-based projects.
+- It is written in XML format and serves as the backbone of the project's build and dependency management system.
+- The POM file contains information about the project, such as its group ID, artifact ID, version, and packaging type.
+- It defines the project's dependencies, which are external libraries or modules required by the project.
+- The POM file also includes build configurations, such as build plugins, goals, and profiles, to customize the build process.
+
+# application.properties File
+The application.properties file in Spring Boot is a configuration file that allows customization of various aspects of the application.
+- It contains key-value pairs of configuration properties that control behaviors such as database connections, logging settings, and server configurations.
+- The file is automatically loaded during application startup and provides externalized configuration, allowing modifications without changing the source code.
 
