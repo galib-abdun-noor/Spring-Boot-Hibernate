@@ -16,3 +16,10 @@ A REST Controller is a key component in building RESTful web services using the 
 - REST Controllers are typically implemented in frameworks like Spring MVC, ASP.NET Web API, or Django to handle RESTful operations.
 - REST Controllers support various HTTP methods such as GET, POST, PUT, PATCH, and DELETE, allowing clients to perform different operations on resources.
 
+# Spring MVC
+Spring MVC is a robust and flexible web framework in the Spring ecosystem which follows the Model-View-Controller (MVC) architectural pattern for building web applications.
+
+# Spring Initializr
+[Spring Initializr](https://start.spring.io/) is a web-based tool for generating the initial configuration and project structure for Spring-based applications.
+
+
