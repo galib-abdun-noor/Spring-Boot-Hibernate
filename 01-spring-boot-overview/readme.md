@@ -37,3 +37,6 @@ The application.properties file in Spring Boot is a configuration file that allo
 - It contains key-value pairs of configuration properties that control behaviors such as database connections, logging settings, and server configurations.
 - The file is automatically loaded during application startup and provides externalized configuration, allowing modifications without changing the source code.
 
+# java -jar Command
+The java -jar command in Spring Boot is used to run an executable JAR file that contains your Spring Boot application along with its dependencies. This command starts the embedded web server and deploys your application.
+
