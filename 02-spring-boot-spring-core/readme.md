@@ -27,5 +27,7 @@ The @Component annotation is used to mark a Java class as a Spring bean. When a 
 # @Qualifier Annotation
 The @Qualifier annotation is used to disambiguate between beans that have the same type when multiple beans of that type are present in the application context.
 
+# @Primary Annotation
+When you have multiple beans of the same type and you want to specify which bean should be given preference for autowiring, you can use the @Primary annotation. By marking a bean with @Primary, you indicate that it is the primary bean to be used when autowiring that type.
 
 
