@@ -30,4 +30,11 @@ The @Qualifier annotation is used to disambiguate between beans that have the sa
 # @Primary Annotation
 When you have multiple beans of the same type and you want to specify which bean should be given preference for autowiring, you can use the @Primary annotation. By marking a bean with @Primary, you indicate that it is the primary bean to be used when autowiring that type.
 
+# Lazy Initialization
+Lazy initialization in Spring Boot refers to the delayed creation and initialization of beans until they are actually needed. By default, Spring beans are eagerly initialized during the application startup process. However, with lazy initialization, beans are created only when they are first requested, potentially improving performance and reducing memory consumption.
+- Definition: Lazy initialization is a feature that allows beans to be created and initialized on-demand, rather than during application startup.
+- @Lazy Annotation: To enable lazy initialization for a specific bean, you can use the @Lazy annotation on the bean declaration or configuration method. This annotation tells Spring to create a proxy object instead of the actual bean instance.
+
+
+
 
