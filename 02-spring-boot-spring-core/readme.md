@@ -35,6 +35,21 @@ Lazy initialization in Spring Boot refers to the delayed creation and initializa
 - Definition: Lazy initialization is a feature that allows beans to be created and initialized on-demand, rather than during application startup.
 - @Lazy Annotation: To enable lazy initialization for a specific bean, you can use the @Lazy annotation on the bean declaration or configuration method. This annotation tells Spring to create a proxy object instead of the actual bean instance.
 
+# Singleton
+In Spring Boot, the Singleton pattern refers to the default scope of a bean, which means that only one instance of the bean is created and shared across the entire application context.
 
+When you define a bean in a Spring Boot application without explicitly specifying its scope, it is considered to have the singleton scope by default. This means that Spring creates a single instance of that bean and uses it whenever the bean is requested throughout the application
+
+# Bean Scopes
+In Spring Boot, the bean scope refers to the lifecycle and visibility of a bean within the Spring IoC (Inversion of Control) container. The Spring IoC container is responsible for creating and managing instances of beans based on their scopes.
+
+The following are the different bean scopes available in Spring Boot:
+
+1. Singleton (default scope): In this scope, a single instance of the bean is created for the entire application context. The same instance is returned whenever the bean is requested. Singleton beans are shared across multiple requests and threads.
+2. Prototype: In this scope, a new instance of the bean is created every time it is requested. Prototype beans are not shared, and each request for the bean results in a new instance being created.
+3. Request: This scope is applicable in web-aware Spring applications. In this scope, a new instance of the bean is created for each HTTP request. The bean is available only within the scope of that specific request.
+4. Session: This scope is also applicable in web-aware Spring applications. In this scope, a new instance of the bean is created for each HTTP session. The bean is available throughout the duration of the session.
+5. Application: This scope is specific to web-aware Spring applications. In this scope, a single instance of the bean is created for the entire web application context. The bean is available to all sessions and requests within the application.
+6. WebSocket: This scope is specific to web-aware Spring applications that use WebSocket. In this scope, a single instance of the bean is created for each WebSocket connection. The bean is available only within the scope of that specific WebSocket connection.
 
 
