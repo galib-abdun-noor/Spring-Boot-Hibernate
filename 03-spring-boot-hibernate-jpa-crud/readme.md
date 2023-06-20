@@ -36,5 +36,13 @@ Spring Boot Auto-configuration is a feature provided by the Spring Boot framewor
 - Spring Boot auto-configuration automatically configures the Spring application based on the jar dependencies that we have added.
 - Auto-configuration works by scanning the classpath for specific libraries and components commonly used in Spring applications.
 - When an auto-configuration class is found, Spring Boot automatically configures relevant beans and properties based on the detected dependencies.
-- We can enable the auto-configuration feature by using the annotation @EnableAutoConfiguration. But this annotation does not use because it is wrapped inside the @SpringBootApplication annotation. The annotation @SpringBootApplication is the combination of three annotations: @ComponentScan, @EnableAutoConfiguration, and @Configuration.
+- We can enable the auto-configuration feature by using the annotation **@EnableAutoConfiguration**. But this annotation does not use because it is wrapped inside the **@SpringBootApplication** annotation. The annotation **@SpringBootApplication** is the combination of three annotations: **@ComponentScan**, **@EnableAutoConfiguration**, and **@Configuration**.
 ### @SpringBootApplication=@ComponentScan+@EnableAutoConfiguration+@Configuration
+
+# Entity Class
+In Spring Boot, an Entity Class is a Java class that represents a persistent data entity in a database.
+- An entity represents a table stored in a database. Every instance of an entity represents a row in the table.
+- Entity classes are typically annotated with the **@Entity** annotation from the Java Persistence API (JPA).
+- Entity classes often include fields or properties that map to columns in the corresponding database table.
+- The **@Id** annotation is commonly used to designate a field or property as the primary key of the entity.
+- Additional annotations such as **@Column**, **@GeneratedValue**, and **@Transient** can be used to specify column names, generation strategies, and transient properties, respectively.
