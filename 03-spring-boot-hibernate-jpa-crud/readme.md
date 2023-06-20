@@ -19,3 +19,14 @@ JPA stands for Java Persistence API.
 - Object-Relational Mapping (ORM): JPA provides an abstraction layer that maps Java objects to relational database tables, allowing developers to work with objects instead of writing raw SQL queries.
 - Database Independence: JPA supports multiple database vendors, allowing applications to be easily switched between different databases without significant code changes.
 - Simplified Data Access: JPA provides a high-level API for performing database operations, eliminating the need to write boilerplate JDBC code. It handles tasks such as connection management, transaction handling, and caching automatically.
+
+# CRUD Apps
+  # Create (Insert): 
+    - To create a new record in the database, you create a new instance of the entity class, set its properties, and persist it using the     EntityManager (provided by JPA). The EntityManager ensures that the entity is inserted into the database.
+  # Read (Retrieve):
+    - To retrieve records from the database, you use queries or find methods provided by JPA. You can retrieve entities based on their        primary keys or perform more complex queries using JPQL (Java Persistence Query Language) or Criteria API.
+  # Update: 
+    - To update an existing record, you retrieve the entity from the database, modify its properties, and commit the changes using the        EntityManager. The EntityManager tracks the changes and updates the corresponding record in the database when you commit the 
+    transaction.
+  # Delete: 
+    - To delete a record, you retrieve the entity from the database using its primary key or a query, and then remove it using the            EntityManager. The EntityManager ensures that the corresponding record is deleted from the database.
