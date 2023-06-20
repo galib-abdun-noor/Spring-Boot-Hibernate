@@ -8,7 +8,7 @@
 # Maven
 Maven is a popular open-source build automation tool used primarily for Java projects. 
 - It follows the concept of convention over configuration, providing a standard project structure and predefined build lifecycle phases.
-- Maven uses an XML-based configuration file called "pom.xml" (Project Object Model) to define project settings, dependencies, and build instructions.
+- Maven uses an XML-based configuration file called **"pom.xml"** (Project Object Model) to define project settings, dependencies, and build instructions.
 
 # REST Controller
 A REST Controller is a key component in building RESTful web services using the Representational State Transfer (REST) architectural style.
