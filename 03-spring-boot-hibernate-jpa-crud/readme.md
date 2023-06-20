@@ -22,7 +22,7 @@ JPA stands for Java Persistence API.
 
 # CRUD Apps
 - ## Create (Insert): 
-To create a new record in the database, you create a new instance of the entity class, set its properties, and persist it using the     EntityManager (provided by JPA). The EntityManager ensures that the entity is inserted into the database.
+    To create a new record in the database, you create a new instance of the entity class, set its properties, and persist it using the     EntityManager (provided by JPA). The EntityManager ensures that the entity is inserted into the database.
 ## Read (Retrieve):
 To retrieve records from the database, you use queries or find methods provided by JPA. You can retrieve entities based on their        primary keys or perform more complex queries using JPQL (Java Persistence Query Language) or Criteria API.
 ## Update: 
