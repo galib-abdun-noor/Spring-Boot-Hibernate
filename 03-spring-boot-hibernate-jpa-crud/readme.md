@@ -52,4 +52,7 @@ The @Column annotation is part of the Java Persistence API (JPA) and is commonly
 - By default, the column name is assumed to be the same as the field name. However, you can use the name attribute of @Column to specify a different column name.
 - The @Column annotation provides several other attributes to define various column properties, such as **nullable**, **unique**, **length**, **precision**, **scale**, **insertable**, and **updatable**.
 
-
+# @GeneratedValue Annotation
+The **@GeneratedValue** annotation provides the specification of generation strategies for the primary keys values.
+- The @GeneratedValue annotation is used in conjunction with the **@Id** annotation to automatically generate unique identifier values for entity objects in a Spring Boot application.
+- It provides several strategies for generating unique identifier values, such as **AUTO**, **IDENTITY**, **SEQUENCE**, and **TABLE**.
