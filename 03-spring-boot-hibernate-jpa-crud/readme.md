@@ -52,3 +52,4 @@ The @Column annotation is part of the Java Persistence API (JPA) and is commonly
 - By default, the column name is assumed to be the same as the field name. However, you can use the name attribute of @Column to specify a different column name.
 - The @Column annotation provides several other attributes to define various column properties, such as **nullable**, **unique**, **length**, **precision**, **scale**, **insertable**, and **updatable**.
 
+
