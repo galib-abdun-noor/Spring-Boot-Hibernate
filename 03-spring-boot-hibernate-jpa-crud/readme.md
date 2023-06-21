@@ -56,11 +56,11 @@ The @Column annotation is part of the Java Persistence API (JPA) and is commonly
 The **@GeneratedValue** annotation provides the specification of generation strategies for the primary keys values.
 - The @GeneratedValue annotation is used in conjunction with the **@Id** annotation to automatically generate unique identifier values for entity objects in a Spring Boot application.
 - It provides several strategies for generating unique identifier values, such as **AUTO**, **IDENTITY**, **SEQUENCE**, and **TABLE**.
-    ## AUTO:
-      Based on the database’s support for primary key generation framework decides which generator type to be used.
-    ## IDENTITY:
-      In this case database is responsible for determining and assigning the next primary key.
-    ## SEQUENCE:
-      A sequence specify a database object that can be used as a source of primary key values. It uses @SequenceGenerator.
-    ## TABLE:
-      It keeps a separate table with the primary key values. It uses @TableGenerator.
+    ### AUTO:
+  Based on the database’s support for primary key generation framework decides which generator type to be used.
+    ### IDENTITY:
+  In this case database is responsible for determining and assigning the next primary key.
+    ### SEQUENCE:
+  A sequence specify a database object that can be used as a source of primary key values. It uses @SequenceGenerator.
+    ### TABLE:
+  It keeps a separate table with the primary key values. It uses @TableGenerator.
