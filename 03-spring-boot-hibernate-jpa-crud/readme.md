@@ -46,3 +46,9 @@ In Spring Boot, an Entity Class is a Java class that represents a persistent dat
 - Entity classes often include fields or properties that map to columns in the corresponding database table.
 - The **@Id** annotation is commonly used to designate a field or property as the primary key of the entity.
 - Additional annotations such as **@Column**, **@GeneratedValue**, and **@Transient** can be used to specify column names, generation strategies, and transient properties, respectively.
+
+# @Column Annotation 
+The @Column annotation is part of the Java Persistence API (JPA) and is commonly used to specify the mapped column for a persistent property or field. 
+- By default, the column name is assumed to be the same as the field name. However, you can use the name attribute of @Column to specify a different column name.
+- The @Column annotation provides several other attributes to define various column properties, such as **nullable**, **unique**, **length**, **precision**, **scale**, **insertable**, and **updatable**.
+
