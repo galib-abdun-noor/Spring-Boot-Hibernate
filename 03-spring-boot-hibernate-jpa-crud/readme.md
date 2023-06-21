@@ -64,3 +64,13 @@ The **@GeneratedValue** annotation provides the specification of generation stra
 **SEQUENCE:** A sequence specify a database object that can be used as a source of primary key values. It uses @SequenceGenerator.  
 
 **TABLE:** It keeps a separate table with the primary key values. It uses @TableGenerator.  
+
+# @Transactional Annotation
+ - The @Transactional annotation is used in Spring Boot to define transactional boundaries for methods or classes.
+ - It is typically used in service layer classes or methods that involve database operations.
+ - If an exception occurs during the execution of a transactional method, the transaction will be rolled back, and any changes made within the transaction will be undone.
+
+# @Repository Annotation
+- The @Repository annotation is used in Spring Boot to indicate that a class is a repository, which typically handles data access and persistence operations.
+- It is a specialization of the **@Component** annotation and serves as a marker for Spring to automatically detect and create instances of repository classes.
+
