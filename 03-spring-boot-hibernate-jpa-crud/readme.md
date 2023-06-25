@@ -74,3 +74,11 @@ The **@GeneratedValue** annotation provides the specification of generation stra
 - The @Repository annotation is used in Spring Boot to indicate that a class is a repository, which typically handles data access and persistence operations.
 - It is a specialization of the **@Component** annotation and serves as a marker for Spring to automatically detect and create instances of repository classes.
 
+# spring.jpa.hibernate.ddl-auto
+The spring.jpa.hibernate.ddl-auto property allows you to control how Hibernate manages the database schema, providing flexibility and convenience at different stages of the project lifecycle. In other words, this property defines the strategy for generating and updating the database schema based on JPA entities.
+
+**create** – Hibernate first drops existing tables and then creates new tables.
+**update** – The object model created based on the mappings (annotations or XML) is compared with the existing schema, and then Hibernate **updates** the schema according to the diff. It never deletes the existing tables or columns even if they are no longer required by the application.
+**create-drop** – similar to create, with the addition that Hibernate will drop the database after all operations are completed; typically used for unit testing
+**validate** – Hibernate only validates whether the tables and columns exist; otherwise, it throws an exception.
+**none** – This value effectively turns off the DDL generation.
